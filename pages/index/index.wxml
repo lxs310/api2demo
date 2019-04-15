@@ -1,0 +1,16 @@
+<swiper>
+  <block wx:for="{{notes}}">
+    <swiper-item class="sw-item">
+      <image src="{{item.picUrl}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='container'>
+  <view wx:for="{{notes}}" catchtap='toDeatil' data-id="{{item.id}}" class="cube">
+    {{item.title}}</view>
+</view>
+<view class='container1'>
+  <view wx:for="{{notes}}" catchtap='toDeatil' data-id="{{item.id}}" class="cube">
+    {{item.title}}</view>
+</view>
